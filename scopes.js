@@ -26,7 +26,7 @@ function sayHelloFn() {
 
    console.log("hello") 
    console.log( c , l , v )
-   // Prints all values because a function has access to its outer variables
+   // Prints all values because a function has access to its outer variables  + variables declared within function scope.
 
 }
 
