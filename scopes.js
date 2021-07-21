@@ -31,3 +31,4 @@ function sayHelloFn() {
 }
 
 console.log( fucntionScopeC , functionScopeL , functionScopeV );
+// No, you can't access funcion scoped variables. These variables are not visible outside. 
