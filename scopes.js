@@ -2,7 +2,7 @@ const globalScopeC = "10";
 let globalScopeL ="learning javascript";
 var globalScopeV = "old school";
 
-// Still using notepad at this point. Because I want to be a Javascript expert soon.
+// Still using notepad at this point. Because I want to be a Javascript expert.
 
 console.log( globalScopeC , globalScopeL , globalScopeV );
 // Prints all values
