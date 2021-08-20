@@ -20,4 +20,8 @@ promise.then( result=> alert(result) , error => alert(error));
 // The first argument is a function which runs when the promise is resolved and receieves the result
 // The second argument is a function which runs when the promise is rejected and receives the error
 
+//This can also be written as 
+promise.then( result => alert(result) ).catch( error => alert(error));
+//The function inside then would be called on fulfillments and the function inside catch would be called on rejections 
+
 // Reference https://javascript.info/promise-basics
