@@ -16,12 +16,13 @@
 
 
 // .then .catch and .finally
-promise.then( result=> alert(result) , error => alert(error));
+1. promise.then( result=> alert(result) , error => alert(error));
 // The first argument is a function which runs when the promise is resolved and receieves the result
 // The second argument is a function which runs when the promise is rejected and receives the error
 
 //This can also be written as 
-promise.then( result => alert(result) ).catch( error => alert(error));
+2. promise.then( result => alert(result) ).catch( error => alert(error));
 //The function inside then would be called on fulfillments and the function inside catch would be called on rejections 
 
+//The difference between the 2 forms is that if success callback returns a rejected promise only incase of 2. the catch() would catch the error
 // Reference https://javascript.info/promise-basics
