@@ -28,4 +28,6 @@ function sayHi() {
 // It made the function available by putting it in the memory . That's how sayHi function
 // was accessible prior to function declaration in execution phase 
 
+// Variables and functions are hoisted within the scope they belong to
+
 //Source https://codeburst.io/javascript-demystified-variable-hoisting-c3c4d2e8fd40
