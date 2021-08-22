@@ -6,4 +6,6 @@
 
 // Every context provides this keyword which points to an object to which the current code that is executed belongs to 
 
+// In JavaScript, execution context is an abstract concept that holds information about the environment within which the current code is being executed.
+
 // Source https://codeburst.io/js-demystified-04-execution-context-97dea52c8ac6
