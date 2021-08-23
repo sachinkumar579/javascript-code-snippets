@@ -8,4 +8,8 @@
 
 // In JavaScript, execution context is an abstract concept that holds information about the environment within which the current code is being executed.
 
+//Memory creation phase 
+
+//Creation of a scope , Creation of a scope chain , Determination of value of this 
+
 // Source https://codeburst.io/js-demystified-04-execution-context-97dea52c8ac6
