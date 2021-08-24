@@ -12,4 +12,6 @@
 
 //Creation of a scope , Creation of a scope chain , Determination of value of this 
 
+// The information about the process of execution of a running function is stored in its execution context 
+
 // Source https://codeburst.io/js-demystified-04-execution-context-97dea52c8ac6
