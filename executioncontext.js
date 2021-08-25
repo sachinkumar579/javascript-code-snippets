@@ -14,4 +14,6 @@
 
 // The information about the process of execution of a running function is stored in its execution context 
 
+// Execution context refers to the code that is currently running and everything else that helps
+
 // Source https://codeburst.io/js-demystified-04-execution-context-97dea52c8ac6
