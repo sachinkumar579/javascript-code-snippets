@@ -22,6 +22,6 @@
 
 // this always get set to a leading parent object of a function at the time of execution 
 
-// a simple rule = new function call = execution context 
+// a simple rule = function call = new execution context 
 
 // Source https://codeburst.io/js-demystified-04-execution-context-97dea52c8ac6
