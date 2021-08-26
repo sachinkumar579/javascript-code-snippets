@@ -18,6 +18,8 @@
 
 // JS engine creates a global execution context even before the code is executed. It gives 2 things by default - window object and this keyword
 
-// Every execution context has a reference to its outer scope all the way up to the global scope. This chain of reference is a called a scope chain
+// Every execution context has a reference to its outer scope all the way up to the global scope. This chain of reference is a called a scope chain4
+
+// this always get set to a leading parent object of a function at the time of execution 
 
 // Source https://codeburst.io/js-demystified-04-execution-context-97dea52c8ac6
