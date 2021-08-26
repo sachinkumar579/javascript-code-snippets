@@ -16,4 +16,6 @@
 
 // Execution context refers to the code that is currently running and everything else that helps
 
+// JS engine creates a global execution context even before the code is executed. It gives 2 things by default - window object and this keyword
+
 // Source https://codeburst.io/js-demystified-04-execution-context-97dea52c8ac6
