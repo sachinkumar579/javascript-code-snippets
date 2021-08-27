@@ -22,3 +22,7 @@ fn();
 
 //Every running function has something called lexical environment
 //Lexical env has environment record for storing all objects/function declarations and reference to outer lexical environment
+
+// Every function, on creation , is assigned an internal property called [[scope]]
+
+// [[scope]] property is assigned to a function when it is created not when it is invoked 
