@@ -24,4 +24,6 @@
 
 // a simple rule = function call = new execution context 
 
+// this keyword by default points to the global window object and sits within the global scope 
+
 // Source https://codeburst.io/js-demystified-04-execution-context-97dea52c8ac6
