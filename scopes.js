@@ -39,3 +39,7 @@ printValues();
 
 //console.log(fucntionScopeC, functionScopeL, functionScopeV);
 // No, you can't access funcion scoped variables. These variables are not accessible outside.
+
+// local scope is any scope created within global scope 
+
+// Every time a new function is declared , a new local scope gets created and variables declared inside the function belong to that unique scope 
