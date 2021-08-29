@@ -1,6 +1,13 @@
 // Immediately invoked function expression 
 
-let print = ( function() { return 'hello' } )
+let sayHello = ( function() { return 'hello' } ) ();
 
-console.log(print)
+console.log(sayHello)
 
+// an even better version with arrow functions
+
+let sayHello = (() => {
+   return 'hello'
+}) ();
+
+console.log(sayHello)
