@@ -15,4 +15,4 @@ console.log(sayHello)
 
 ( function() { console.log('hello') } ) () ;
 
-// iife is executing a function while defining the function 
+// iife is executing a function while defining it 
