@@ -1,4 +1,4 @@
-// Immediately invoked function expression 
+// Immediately invoked function expression  (iife)
 
 let sayHello = ( function() { return 'hello' } ) ();
 console.log(sayHello)
@@ -12,3 +12,7 @@ let sayHello = (() => {
 }) ();
 
 console.log(sayHello)
+
+( function() { console.log('hello') } ) () ;
+
+// iife is executing a function while defining the function 
