@@ -25,5 +25,17 @@ myFunction().then(
 // wil always return a Promise. All values will be wrapped in a Promise
 
 
+// Await - works only inside async block
 
+async function sayHello() {
+        let promise = new Promise((res)=>{
+            setTimeout(()=>{res("done")}, 3000)
+        })
+
+        let val = await promise; // The keyword await makes JS wait until the promise is settled and returns the result
+        return val;
+}
+
+console.log(sayHello()) // done will be printed after 3secs because setTimeout will resolve the promise after 3secs
+    
 
