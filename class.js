@@ -3,6 +3,8 @@
 // Basic syntax
 
  class ClassName {
+  
+    name = 'initialValue'
    
     constructor(name) {
        this.name = name
