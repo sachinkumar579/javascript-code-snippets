@@ -21,5 +21,7 @@
 // name is printed on calling method1() in line 18 . On creating the object in line 17 the value
 // JSengine is assigned to name and that is how the same value gets printed on calling method1() function
 
+console.log(typeof ClassName) // will print function 
+
 
 
