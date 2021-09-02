@@ -154,7 +154,8 @@ let user = {
 // this can be used in any function even if it is not a method of an object 
 // the rule in obj is simple - if obj.f() is called this here refers to obj 
 // if there is a this inside a function it should be called in an object context 
-// In JavaScript this is “free”, its value is evaluated at call-time and does not depend on where the method was declared, but rather on what object is “before the dot”.
+// In JavaScript this is “free”, its value is evaluated at call-time and does not depend on where the method was declared, but rather on what object is “before the dot”
+// Arrow functions have no this. It is taken from the outer normal function 
 
 
 // source https://javascript.info/object-methods
