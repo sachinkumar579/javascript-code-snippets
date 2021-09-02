@@ -89,6 +89,12 @@ console.log( "name" in user)  // should contain the actual property name
 
 // undefined values should not be explicitly assigned. Use null or unknown values or empty values
 
+// for in loop - to iterate over an object 
+for (let key in user) {
+    console.log(user[key]) //Tony
+}
+
+// Ordering in objects
+// Integer keys are sorted and non integer keys are listed in creation order
 
 // source https://javascript.info/object
-
