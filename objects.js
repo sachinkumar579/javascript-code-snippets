@@ -97,4 +97,65 @@ for (let key in user) {
 // Ordering in objects
 // Integer keys are sorted and non integer keys are listed in creation order
 
+// this
+
+// Actions are represented in JS by functions in properties 
+
+let user = {
+    name: 'Tony',
+    age :36 
+}
+
+user.sayHello = function() {
+    console.log('hello');   
+}
+
+//  a function that is a property of an object is called a method 
+
+// shorter syntax
+let user = {
+    name: 'Tony',
+    age :36 ,
+    sayHello : function() {
+    console.log('hello');   
+    }
+}
+
+
+// or
+
+let user = {
+    name: 'Tony',
+    age :36 ,
+    sayHello() {
+    console.log('hello');   
+    }
+}
+
+// using this . this refers to the current object 
+let user = {
+    name: 'Tony',
+    age :36 ,
+    sayHello() {
+    console.log('hello '+this.name); // this value will be user    
+    }
+}
+
+
+let user = {
+    name: 'Tony',
+    age :36 ,
+    sayHello() {
+    console.log('hello '+user.name); // this is possible too   
+    }
+}
+
+
+// this can be used in any function even if it is not a method of an object 
+// the rule in obj is simple - if obj.f() is called this here refers to obj 
+// if there is a this inside a function it should be called in an object context 
+// In JavaScript this is “free”, its value is evaluated at call-time and does not depend on where the method was declared, but rather on what object is “before the dot”.
+
+
+// source https://javascript.info/object-methods
 // source https://javascript.info/object
