@@ -13,6 +13,15 @@ let user = {    // an object
 
 console.log(user.name) // Tony
 
+// in dot notation we cannot use variable names
+
+let user = { name : "Tony" } 
+let key = "name"
+
+console.log(user.key) // undefined
+console.log(user[key]) // Tony
+console.log(user["name"]) // Tony
+
 // Adding properties
 
 user.isAdmin = true 
