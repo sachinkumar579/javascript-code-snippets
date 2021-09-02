@@ -32,6 +32,54 @@ let user = {    // an object
 
 // For multi worded properties dot notation doesnt work, use square bracket notation
 
-console.log( user['am i cool'])
+console.log( user['am i cool']) // No 
+
+// Another way to access as result of expression 
+
+let key =age
+
+console.log( user[key] ) // 36 
+
+// using square brackets in an object literal 
+
+let key = 'name'
+let user = {
+    
+   [ key ] : 'Tony'   
+    
+}
+
+// [key] means the property names should be taken from kay value 
+
+console.log(user.name) // Tony
+
+// property value shorhand
+
+let name = 'Tony'
+let age = 36
+let user = {
+   name, // same as name:name
+   age // same as age:age 
+}
+
+console.log(user) // name: "Tony", age: 36 
+
+// reserver words can be used a object property names
+
+//Numbers are automatically converted to strings when used as property name
+// 0 becomes "0"
+
+let user= {} 
+
+console.log(user.name) // undefined
+
+// Property existence 
+let user = { name : 'Tony' } 
+
+console.log( "name" in user)  // should contain the actual property name 
+
+// undefined values should not be explicitly assigned. Use null or unknown values or empty values
+
 
 // source https://javascript.info/object
+
