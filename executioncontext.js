@@ -30,4 +30,16 @@
 
 // Global object in a browser is called Window , Scripts running under node have an object called global 
 
+var a = 1 ;
+
+console.log(window.a) // 1 will be printed 
+
+function sayHello() {
+   console.log('hello') 
+}
+
+window.sayHello() // will print hello 
+sayHello()  // will print hello 
+// Global variables and functions are stored as properties in window object 
+
 // Source https://codeburst.io/js-demystified-04-execution-context-97dea52c8ac6
