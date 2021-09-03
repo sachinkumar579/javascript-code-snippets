@@ -43,4 +43,6 @@ sayHello()  // will print hello
 // Global variables and functions are stored as properties in window object 
 
 // window can also be replaced with this 
+
+// let and const variables are not stored in the global space 
 // Source https://codeburst.io/js-demystified-04-execution-context-97dea52c8ac6
