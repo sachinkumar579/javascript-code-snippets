@@ -26,3 +26,5 @@ fn();
 // Every function, on creation , is assigned an internal property called [[scope]]
 
 // [[scope]] property is assigned to a function when it is created not when it is invoked 
+
+// Scope chaining - memory space of the function that was called + the memory space of its outer function 
