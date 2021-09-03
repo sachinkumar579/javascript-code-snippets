@@ -28,4 +28,6 @@
 
 // A global Window object is created when JS engine starts executing the code 
 
+// Global object in a browser is called Window 
+
 // Source https://codeburst.io/js-demystified-04-execution-context-97dea52c8ac6
