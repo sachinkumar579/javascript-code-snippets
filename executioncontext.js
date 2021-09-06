@@ -51,5 +51,11 @@ sayHello()  // will print hello
 // and the global execution context stays at the bottom of this stack. And a new execution context is created
 // and pushed to the stack when execution of a function begins.
 
+// The are 2 kinds of execution contexts - global execution context and function execution context .
+// The difference being global execution context is created by JS engine even before the execution starts
+// It has the global Window object , this reference and variable/function declarations. Variables= undefined and function declaration
+// Whereas function execution context is created when the function is invoked. It contains the function arguments, this reference and 
+// variable/function declaration. Variables = undefined and function declaration
+
 // Source https://stackoverflow.com/questions/35759544/what-is-the-difference-and-relationship-between-execution-context-and-lexical-en
 // A very good explanation is given here https://betterprogramming.pub/execution-context-lexical-environment-and-closures-in-javascript-b57c979341a5
