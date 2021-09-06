@@ -46,3 +46,9 @@ sayHello()  // will print hello
 
 // let and const variables are not stored in the global space 
 // Source https://codeburst.io/js-demystified-04-execution-context-97dea52c8ac6
+
+// The js engine maintains a stack - execution context stack or call stack, which contains these contexts 
+// and the global execution context stays at the bottom of this stack. And a new execution context is created
+// and pushed to the stack when execution of a function begins.
+
+// Source https://stackoverflow.com/questions/35759544/what-is-the-difference-and-relationship-between-execution-context-and-lexical-en
