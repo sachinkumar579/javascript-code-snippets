@@ -52,3 +52,4 @@ sayHello()  // will print hello
 // and pushed to the stack when execution of a function begins.
 
 // Source https://stackoverflow.com/questions/35759544/what-is-the-difference-and-relationship-between-execution-context-and-lexical-en
+// A very good explanation is given here https://betterprogramming.pub/execution-context-lexical-environment-and-closures-in-javascript-b57c979341a5
