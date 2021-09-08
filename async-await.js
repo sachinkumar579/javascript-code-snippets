@@ -58,3 +58,4 @@ fetchData().then(user=>{   // then() method is for handling a successful respons
 // The fetch() method is available in the global scope that instructs the web browsers to send a request to a URL.
 // To get the actual data we can call one of the methods of the Response object - text() for raw data, json() for JSON data 
     
+// Source https://www.javascripttutorial.net/javascript-fetch-api/
