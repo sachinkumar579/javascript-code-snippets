@@ -29,6 +29,10 @@ rabbit.__proto__ = animal; // sets rabbit.[[Prototype]] = animal   // set animal
 alert( rabbit.eats ); // true // eats is taken from animal 
 alert( rabbit.jumps ); // true
 
+// The value of __proto__ can be either an object or null. Other types are ignored.
+// There can be only one [[Prototype]]. An object may not inherit from two others.
 
+// No matter where the method is found: in an object or its prototype. In a method call, this is always the object before the dot.
+// As a result, methods are shared, but the object state is not.
 
 // Source https://javascript.info/prototype-inheritance
