@@ -6,6 +6,6 @@ try {
  } catch(err) {
    // handle the error 
   } finally {
-    // runs irrespective of whether there is an error or not in try block 
+    // runs irrespective of whether try block returns an error or not
   }
 
