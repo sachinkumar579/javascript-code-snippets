@@ -13,3 +13,7 @@
 typeof(someVariable)
 typeof someVariable 
 
+// JS allows us to work with primitives(strings and numbers) as if they were objects 
+// There are 7 primitive types: string, number, bigint, boolean, symbol, null and undefined
+// An object Is capable of storing multiple values as properties.
+
