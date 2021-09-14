@@ -158,5 +158,16 @@ let user = {
 // Arrow functions have no this. It is taken from the outer normal function 
 
 
+// In Javascript , objects are assigned by references and not by values 
+let arr1 = [1 , 2 , 3 , 4 ]
+let arr2 = arr1
+
+arr1.push(5)
+
+console.log(arr1) // [1,2,3,4,5]
+
+console.log(arr2) // [1,2,3,4,5]
+
 // source https://javascript.info/object-methods
 // source https://javascript.info/object
+
