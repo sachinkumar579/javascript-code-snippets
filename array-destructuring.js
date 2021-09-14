@@ -26,3 +26,6 @@ console.log(a) // 1
 
 console.log(b) // 2 
 
+// Default values can be assigned 
+
+let [ one = 1 ] = data 
