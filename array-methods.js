@@ -265,8 +265,21 @@ let names = name.split(", ")
 
 console.log(names) // ["sachin","is","cool"] 
 
+18. split into letters
+
+let name = "sachin"
+
+let nameSplit = name.split("")
+
+console.log(nameSplit) ['s','a','c','h','i','n']
 
 
+19. join()
 
+let arr = ['one','two','three']
+
+let arrJoin = arr.join('-')
+
+console.log(arrJoin)  // one-two-three
 
 //Source https://javascript.info/array-methods
