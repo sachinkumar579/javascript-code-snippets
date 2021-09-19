@@ -239,6 +239,34 @@ arr.sort(compareNumeric);
 
 alert(arr);  // 1, 2, 15
 
+// An array can have items of any type - string, number, objects or whatever
+// To sort it we need an ordering function that knows how to compare its elements 
+// A comparison function is only required to return a positive number to say “greater” 
+// and a negative number to say “less”.
+
+16. reverse()
+
+// Reverses the order of elements in the array
+
+let arr = [1, 4,2,3, 5,"true",true];
+arr.reverse();
+
+console.log( arr ); // [1, 4,2,3, 5,"true",true] in reverse
+
+// It also returns the array after the reversal
+
+17. split and join 
+
+// Splits the string into an array by the given delimiter 
+
+let name = "sachin, is, cool"
+
+let names = name.split(", ")
+
+console.log(names) // ["sachin","is","cool"] 
+
+
+
+
 
 //Source https://javascript.info/array-methods
-
