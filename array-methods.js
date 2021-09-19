@@ -324,5 +324,6 @@ console.log(Array.isArray({})); // false
 
 console.log(Array.isArray([])); // true
 
+// sort, reverse and splice modify the array itself.
 
 //Source https://javascript.info/array-methods
