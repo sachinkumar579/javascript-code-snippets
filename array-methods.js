@@ -132,3 +132,45 @@ arr.forEach(function(item,index,array) {
 //Item is 2 at Index 1 In Array  1,2,3,4
 //Item is 3 at Index 2 In Array  1,2,3,4
 //Item is 4 at Index 3 In Array  1,2,3,4
+
+10. Searchin in an array
+
+arr.indexOf(item, from) – looks for item starting from index from, and returns the index where it was found, otherwise -1.
+arr.lastIndexOf(item, from) – same, but looks for from right to left.
+arr.includes(item, from) – looks for item starting from index from, returns true if found.
+
+let arr = [1,2,3,4,false,true]
+
+console.log(arr.indexOf(true))  // 5
+
+// They use === for comparison 
+
+let arr = [3,4,false,"1",3]
+
+console.log(arr.indexOf(3)) // 0
+
+console.log(arr.lastIndexOf(3)) // 4
+
+console.log(arr.includes(4)) // true 
+
+11. find()
+
+// If the code returns true the search will be stopped and the current item will be returned
+
+let users = [
+   {id: 1 , name:"sachin"},
+   {id: 2 , name:"kumar"},
+   {id: 3 , name:"not-so-cool"}
+]
+
+let user = users.find((user)=> {
+  return user.id==1
+})
+
+console.log(user) // { id: 1 , name:"sachin" } . It has the 3rd object here because user.id at this iteration is 3 and that object is returned which is stored in user variable
+
+
+
+
+
+
