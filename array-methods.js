@@ -197,11 +197,48 @@ console.log(user) // { id: 3 , name:"kumar" } , { id: 3 , name:"not-so-cool" }
 
 let users = [ "sachin","kumar","uncool"]
 
-let user = users.map((user)=> {
-  return user.length
+let userLength = users.map((item,index,array)=> {
+  return item.length
 })
 
-console.log(user) // [6,5,6] 
+console.log(userLength) // [6,5,6] 
+
+15. sort()
+
+// Sorts the array in place
+
+let arr = [ 1, 2, 15 ];
+
+// the method reorders the content of arr
+arr.sort();
+
+alert( arr );  // 1, 15, 2
+
+//The items are sorted as strings by default.
+//All elements are converted to strings for comparisons. 
+//For strings, lexicographic ordering is applied and indeed
+
+// To have our own sorting order we should supply a function
+// as an argument of sort() method
+
+function compare(a,b) {
+  if(a>b) return 1 ;
+  if(a==b) return 0; 
+  if(a<b) return -1; 
+}
+
+function compareNumeric(a, b) {
+  if (a > b) return 1;
+  if (a == b) return 0;
+  if (a < b) return -1;
+}
+
+let arr = [ 1, 2, 15 ];
+
+arr.sort(compareNumeric);
+
+alert(arr);  // 1, 2, 15
 
 
+//Source https://javascript.info/array-methods
 
