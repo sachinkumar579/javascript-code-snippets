@@ -282,4 +282,40 @@ let arrJoin = arr.join('-')
 
 console.log(arrJoin)  // one-two-three
 
+20. reduce()
+
+// Used to calculate a singel value based on the array 
+// The function is applied to all array elements one after another and “carries on” its result to the next call.
+// Result of the previous call becomes the first argument of the next one.
+// Advised to always specify the initial value.
+
+// Syntax
+
+let value = arr.reduce(function(accumulator, item, index, array) {
+  // ...
+}, [initial]);
+
+// accumulator -  result of the previous function call 
+// item - current item
+// index - its position
+// array - the input array
+
+Ex
+
+let arr= [1,2,3,4]
+
+let sum = arr.reduce( (sum,item) => sum+item , 0 )   // uses 2 arguments 
+
+console.log(sum) // 10
+
+21. reduceRight() 
+
+// The method reduceRight does the same, but goes from right to left.
+
+22. 
+console.log(Array.isArray({})); // false
+
+console.log(Array.isArray([])); // true
+
+
 //Source https://javascript.info/array-methods
