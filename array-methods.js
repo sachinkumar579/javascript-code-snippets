@@ -156,6 +156,7 @@ console.log(arr.includes(4)) // true
 11. find()
 
 // If the code returns true the search will be stopped and the current item will be returned
+// The find method looks for a single (first) element that makes the function return true.
 
 let users = [
    {id: 1 , name:"sachin"},
@@ -169,8 +170,38 @@ let user = users.find((user)=> {
 
 console.log(user) // { id: 1 , name:"sachin" } . It has the 3rd object here because user.id at this iteration is 3 and that object is returned which is stored in user variable
 
+12. findIndex() 
 
+// Same as index but it returns the index where the element was found 
+// Whenever it returns true 
 
+13. filter()
+
+// same as find but filter  returns an array of all matching elements 
+
+let users = [
+   {id: 1 , name:"sachin"},
+   {id: 3 , name:"kumar"},
+   {id: 3 , name:"not-so-cool"}
+]
+
+let user = users.filter((user)=> {
+  return user.id==3
+})
+
+console.log(user) // { id: 3 , name:"kumar" } , { id: 3 , name:"not-so-cool" }
+
+14. map()
+
+// This transforms the input array
+
+let users = [ "sachin","kumar","uncool"]
+
+let user = users.map((user)=> {
+  return user.length
+})
+
+console.log(user) // [6,5,6] 
 
 
 
