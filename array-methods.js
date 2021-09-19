@@ -153,6 +153,13 @@ console.log(arr.lastIndexOf(3)) // 4
 
 console.log(arr.includes(4)) // true 
 
+let arr = [1,2,3,4,5,5,6]
+
+console.log(arr.indexOf(5,4))  //4
+
+console.log(arr.indexOf(5,5))  //5
+
+
 11. find()
 
 // If the code returns true the search will be stopped and the current item will be returned
