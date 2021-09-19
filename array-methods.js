@@ -97,7 +97,7 @@ console.log(arr.slice(-2)) // ["am" , "Sachin"] -2 till the end
 8. concat()
 
 // The method arr.concat creates a new array that includes values from other arrays
-// and additional items.
+// and additional items. The original array is unmodified
 
 arr.concat(arg1, arg2...)
 
@@ -109,3 +109,26 @@ let arr2 = [9,0]
 
 console.log(arr.concat(arr1,arr2)) // (10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
+
+
+let arr = [1,2,3,4]
+
+let arr1 = { name : "sac"}
+
+let concatArr = arr.concat(arr1)
+ 
+console.log(concatArr) // (5) [1, 2, 3, 4, { name : "sac" }] . The object is itself is stored in index 4
+
+9. Iterate : forEach
+// This method allows to run a function for every element in the array
+let arr = [1,2,3,4]
+
+arr.forEach(function(item,index,array) {
+  console.log("Item is " + item+ " at Index " + index + " In Array  " + array) 
+})
+
+//Output
+//Item is 1 at Index 0 In Array  1,2,3,4
+//Item is 2 at Index 1 In Array  1,2,3,4
+//Item is 3 at Index 2 In Array  1,2,3,4
+//Item is 4 at Index 3 In Array  1,2,3,4
