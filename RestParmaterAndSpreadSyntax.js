@@ -16,8 +16,8 @@ console.log(sum) // 3  . 3,3,4 will be ignored
 
 function print(...arr) { // the dots ... here mean gather all parameters into an array 
 
-    for(let val in arr) {
-       console.log(val) 
+    for(let index in arr) {
+       console.log(arr[index]) 
     }
   
 }
