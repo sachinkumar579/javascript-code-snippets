@@ -175,6 +175,10 @@ console.log(Object.keys(obj)) // ['a','b','c']
 console.log(Object.values(obj)) // [1,2,3]
 console.log(Object.entries(obj))  // [ ['a',1] , ['b',2] , ['c',3] ] 
 
+//Both objects and arrays are considered “special” in JavaScript. 
+//Objects represent a special data type that is mutable and can be used to store a collection of data (rather than just a single value). 
+//Arrays are a special type of variable that is also mutable and can also be used to store a list of values
+
 
 
 // source https://javascript.info/object-methods
