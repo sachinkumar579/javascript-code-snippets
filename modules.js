@@ -127,4 +127,7 @@ import { b } from "./some.js";
 // Since it has import stmt it evaluates some.js and since it has export it gets the
 // variable b with value s . some is printed first and then hi and line 103 is executed 
 
+
+// import must be at the top level. conditional imports don't work 
+
 // Source https://javascript.info/modules-intro
