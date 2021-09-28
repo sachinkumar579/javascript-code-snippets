@@ -31,6 +31,62 @@ import {name,age} from './some.js';
 console.log(name,age)
 </script>
 
+-----------------------------------------------------
+  
+index.html
+<script type="module"> 
+import {updateName} from './some.js';
+let name = updateName()
+console.log(name)
+</script>
+
+some.js
+export function updateName() {
+  return name;
+}
+
+let name = "sachin";
+
+----------------------------------------------------
+
+// A good practice followed for exporting variables/functions
+// is to put them at the end of the file 
+
+some.js 
+function updateName() {
+  return names;
+}
+
+let names = "sachin";
+
+let doNothing = function () {};
+
+export { updateName, names, doNothing };
+
+// However the placement of export statement doesn't matter. It unbelievably works 
+// if you at the top or anywhere in the file 
+
+some.js 
+export { updateName, names, doNothing, a };
+
+function updateName() {
+  return names;
+}
+
+let names = "sachin";
+let doNothing = function () {};
+let a = { a: 1 };
+
+index.html
+<script type="module"> 
+
+import {updateName,doNothing,names,a} from './some.js';
+
+let name = updateName()
+
+console.log(name,doNothing,names,a)
+
+</script>
 
 
 // Source https://javascript.info/modules-intro
