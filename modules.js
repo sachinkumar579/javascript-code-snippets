@@ -6,19 +6,31 @@
 
 //Syntax
 
+some.js
+export function sayHi(user) {
+  alert(`Hello, ${user}!`); // Hello Sachin
+}
+
 // index.html
 <script type="module"> 
-// 📁 main.js
-import {sayHi} from './sayHi.js';
+import {sayHi} from './some.js';
 
 sayHi('Sachin')
 </script>
 
-sayHi.js
-// 📁 sayHi.js
-export function sayHi(user) {
-  alert(`Hello, ${user}!`); // Hello Sachin
-}
+------------------------------------------------------
+
+some.js
+export let name = "sachin";
+export const age = 32;
+
+
+//index.html
+<script type="module">
+import {name,age} from './some.js';
+console.log(name,age)
+</script>
+
 
 
 // Source https://javascript.info/modules-intro
