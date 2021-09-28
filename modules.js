@@ -88,5 +88,43 @@ console.log(name,doNothing,names,a)
 
 </script>
 
+----------------------------------------------------------------
+
+// A module is evaluated only the first time it is imported 
+
+index.html
+<html lang="en">
+<head>
+    <script type="module" src="index.js" defer> </script>    
+</head>
+<body>
+  
+</body>
+<script type="module">
+    import { b } from "./some.js";
+    console.log(b)
+</script> 
+</html>
+
+some.js
+console.log("some");
+export let b = "s";
+
+index.js
+console.log("hi");
+export let a = "a";
+import { b } from "./some.js";
+
+// output
+
+//some
+//hi
+//s  // Notice some is printed first because import statements are evaluated first . In index.js the control first goes to some.js 
+
+
+// Here is the flow 
+// Line 98 starts executing index.js script 
+// Since it has import stmt it evaluates some.js and since it has export it gets the
+// variable b with value s . some is printed first and then hi and line 103 is executed 
 
 // Source https://javascript.info/modules-intro
