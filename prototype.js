@@ -35,4 +35,23 @@ alert( rabbit.jumps ); // true
 // No matter where the method is found: in an object or its prototype. In a method call, this is always the object before the dot.
 // As a result, methods are shared, but the object state is not.
 
+// Function prototype
+// By default all functions have F.prototype = { constructor: F }, so we can get the constructor of an object by accessing its "constructor" property.
+
+// On regular objects prototype is nothing special . they can be added to an object like any other property 
+
+let user = { prototype : 'no' } 
+
+//Every function has the "prototype" property even if we don’t supply it.
+//The default "prototype" is an object with the only property constructor that points back to the function itself.
+
+function Rabbit() {}
+// by default:
+// Rabbit.prototype = { constructor: Rabbit }
+
+alert( Rabbit.prototype.constructor == Rabbit );  // true 
+
+
+// Source https://javascript.info/function-prototype
+
 // Source https://javascript.info/prototype-inheritance
