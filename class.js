@@ -1,3 +1,4 @@
+// Classes can be used to create complex data structures
 // Used for creating many objects of the same kind - employee, student, car 
 
 // Basic syntax
