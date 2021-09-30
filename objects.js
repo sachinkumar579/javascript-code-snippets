@@ -1,3 +1,4 @@
+// A javascript object is an entity having state and behavior
 // There are 8 data types in JS . 7 are primitive data types that can hold a single value either a number or string. 
 // Objects are used to stored keyed collections of data 
 // An object can be created with {} . A property is a key:value pair where key is a string and value can be anything
