@@ -11,3 +11,7 @@
 // $ ( insert a number).methods()  - get a node from elements in console 
 
 // We can use developer tools to inspect DOM and modify it manually.
+
+// An HTML/XML document is represented inside the browser as the DOM tree.
+
+// Source https://javascript.info/dom-nodes
