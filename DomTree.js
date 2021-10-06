@@ -14,4 +14,6 @@
 
 // An HTML/XML document is represented inside the browser as the DOM tree.
 
+// All operations on the DOM start with the document object. 
+
 // Source https://javascript.info/dom-nodes
