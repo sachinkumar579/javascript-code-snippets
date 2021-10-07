@@ -16,4 +16,9 @@
 
 // All operations on the DOM start with the document object. 
 
+// Ways to search nodes in DOM 
+// If an element has the id attribute, we can get the element using the method document.getElementById(id), no matter where it is.
+
+// elem.querySelectorAll(css) returns all elements inside elem matching the given CSS selector.
+
 // Source https://javascript.info/dom-nodes
