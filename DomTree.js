@@ -21,4 +21,7 @@
 
 // elem.querySelectorAll(css) returns all elements inside elem matching the given CSS selector.
 
+// console.log(elem) shows the element DOM tree.
+// console.dir(elem) shows the element as a DOM object, good to explore its properties.
+
 // Source https://javascript.info/dom-nodes
