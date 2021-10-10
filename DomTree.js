@@ -24,4 +24,7 @@
 // console.log(elem) shows the element DOM tree.
 // console.dir(elem) shows the element as a DOM object, good to explore its properties.
 
+// When the browser loads the page, it “reads” (another word: “parses”) the HTML and generates DOM 
+// objects from it. For element nodes, most standard HTML attributes automatically become properties of DOM objects.
+
 // Source https://javascript.info/dom-nodes
