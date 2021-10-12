@@ -28,4 +28,5 @@
 // objects from it. For element nodes, most standard HTML attributes automatically become properties of DOM objects.
 
 // Too tired today 
+// Tired
 // Source https://javascript.info/dom-nodes
