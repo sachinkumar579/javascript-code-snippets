@@ -30,4 +30,5 @@
 // Too tired today 
 // Tired
 // Too tired for Javascript today. I have my eyes on Java now !
+// Not in the mood 
 // Source https://javascript.info/dom-nodes
