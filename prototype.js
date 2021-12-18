@@ -51,6 +51,15 @@ function Rabbit() {}
 
 alert( Rabbit.prototype.constructor == Rabbit );  // true 
 
+// Sharing properties using prototype 
+
+Array.prototype.doNothing = 1 // This property doNothing automatically becomes available for all arrays - a and b in this example  
+
+let a   = [1,2,3]
+console.log( a.doNothing )
+  
+let b = []
+console.log(b.doNothing)
 
 // Source https://javascript.info/function-prototype
 
