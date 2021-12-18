@@ -51,7 +51,7 @@ function Rabbit() {}
 
 alert( Rabbit.prototype.constructor == Rabbit );  // true 
 
-// Sharing properties using prototype 
+// Extending properties using prototype 
 
 Array.prototype.doNothing = 1 // This property doNothing automatically becomes available for all arrays - a and b in this example  
 
@@ -60,6 +60,8 @@ console.log( a.doNothing )
   
 let b = []
 console.log(b.doNothing)
+
+// If the property on prototype is a method with this reference , this will refer to object before the dot . In line 59 this = a 
 
 // Source https://javascript.info/function-prototype
 
