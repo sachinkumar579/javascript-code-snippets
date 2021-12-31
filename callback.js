@@ -1,6 +1,6 @@
 
 setTimeout(function () {
-  console.log("This gets printed after 2 mins");
+  console.log("This gets printed after 2 secs");
 }, 2000);
 
 console.log("This is printed first");
