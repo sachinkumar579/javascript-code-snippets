@@ -3,7 +3,8 @@
 
 // Javascript is 
 // single threaded - it can do one thing at a time
-// non blocking - it can also execute tasks asynchronously using asynchronous APIs 
+// non blocking - it can also execute tasks asynchronously using asynchronous APIs , which means Javascript (Javascript engine) can do that one thing without being 
+// interrupted and there could be multiple tasks running in the background with the help of asynchronous APIs 
 
 // Consider this code
 
