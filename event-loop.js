@@ -4,7 +4,8 @@
 // Javascript is 
 // single threaded - it can do one thing at a time
 // non blocking - it can also execute tasks asynchronously using asynchronous APIs , which means Javascript (Javascript engine) can do that one thing without being 
-// interrupted and there could be multiple tasks running in the background with the help of asynchronous APIs 
+// interrupted and there could be multiple tasks running in the background with the help of asynchronous APIs . These asynchronouse tasks are not done by
+// Javascript (Javascript engine) itself but some other stuff (for the lack of a better word) 
 
 // Consider this code
 
@@ -29,6 +30,7 @@ console.log('end')
 // Call stack is empty again 
 
 // Summary 
+// Call stack executes the functions 
 // All code/functions are added to the call stack and call stack can do only one thing at a time or it can execute only a single piece of code at a time
 // Callbacks are placed in a queue. Event loop continously checks for any messages in the callback queue and puts it in the call stack 
 // If the call stack is not empty Event loop will wait till the stack is cleared and then place the message in the call stack 
@@ -37,3 +39,4 @@ console.log('end')
 // Source
 // https://www.digitalocean.com/community/tutorials/understanding-the-event-loop-callbacks-promises-and-async-await-in-javascript
 // https://theflyingmantis.medium.com/javascript-single-threaded-non-blocking-asynchronous-concurrent-language-ffae97c57bef
+// https://dmitripavlutin.com/javascript-promises-settimeout/
