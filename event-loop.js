@@ -16,17 +16,16 @@ console.log('end')
 // How does javascript execute this code. 
 
 // Creates a global execution context and puts it into the call stack - with no variables and function definitions 
-// It starts with line 7 - puts the stmt to the call stack and executes  - printing begin in the console - and it is removed from the call stack 
-// Puts setTimeout() function to the call stack - Runs the setTimout Web API - removes the setTimeout() function from the queue 
-// Control goes to the next line 11 . Puts the stmt to the call stack - prints end to the console - And it is removed from the call stack
+// It starts with line 10 - puts the line to call stack and starts executing  - prints 'begin' to the console - and it is removed from the call stack 
+// Control goes to next line 12 - Puts setTimeout() function to the call stack - Runs the asynchronous setTimout Web API - removes the setTimeout() function from the stack 
+// Control goes to the next line 14 - Puts the line to the call stack - prints "end" to the console - and it is removed from the call stack
 // Removes the global execution context from the call stack since that was the last line of code and there is no more code to execute
-// Call stack is empty now
+// Call stack is empty 
 // setTimeout WebAPI call puts the anonymous function in the queue after a delay of 3000ms or 3 secs 
 // Event loop checks the queue for any messages and immmediately puts the messages to the call stack
 // In this case, the event loop puts the message or instructions or code "console.log('inside settimeout') to the call stack 
-// It prints inside settimeout to the console and removes the message from the queue
+// It prints 'inside settimeout' to the console and removes the line from the stack
 // Call stack is empty again 
-
 
 // Summary 
 // All code/functions are added to the call stack and call stack can do only one thing at a time or it can execute only a single piece of code at a time
@@ -36,3 +35,4 @@ console.log('end')
 
 // Source
 // https://www.digitalocean.com/community/tutorials/understanding-the-event-loop-callbacks-promises-and-async-await-in-javascript
+// https://theflyingmantis.medium.com/javascript-single-threaded-non-blocking-asynchronous-concurrent-language-ffae97c57bef
