@@ -6,7 +6,7 @@
 // Structural -  relationships between objects
 // Behavior - communication/interaction between objects 
 
-// OOPs concepts
+// OOPs concepts (Explanation using Java)
 // Encapsulation  - having the variables and methods in a unit called Class and allowing only the Class to update variables using methods . 
 // The class can entirely control how the state must be altered 
 // Abstraction - hide certain details and show only what is important in the object . 100 % abstraction can be achieved using interfaces . 
