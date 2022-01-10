@@ -30,3 +30,14 @@ copy.name="Mang"
 
 console.log(user,copy)
 
+
+
+let str  = "sachin"
+
+const st = [...str]
+
+console.log(st) // returns and array ['s','a','c','h','i','n']
+
+const st = {...st}
+
+console.log(st) // returns and array { 0:'s',1:'a',2:'c',3:'h',4:'i',5:'n' }
