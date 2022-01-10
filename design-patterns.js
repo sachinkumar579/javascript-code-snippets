@@ -53,3 +53,16 @@ public class MainApp{
 }
 
 
+// UML - Unified Markup Language Diagram 
+
+public class Shape {  
+ private int positionX;
+
+ public void render() {
+  ... 
+ }
+}
+  
+      Shape
+  -    positionX : int 
+  +    render() 
