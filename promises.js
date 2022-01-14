@@ -27,5 +27,37 @@
 
 // In practice, an executor usually does something asynchronously and calls resolve/reject after some time
 
+
+// Promises chaining
+
+let promiseChaining = new Promise((res, rej) => {  // The executor function starts executing asynchronously 
+  res(1);  // Promise is resolved here . this will execute line 36 then method because it is resolved 
+})
+  .then((data) => {
+    console.log(data);  // prints 1 because that is the value from returned Promise in line 34 
+    return 2 * data; // Returns a promise object with value 2 and status fulfilled 
+  })
+  .then((data) => 2 * data) // Returns a promise object with value 4(2*2) and status fulfilled
+  .then((data) => 2 * data); // Returns a promise object with value 8(2*4) and status fulfilled
+
+promiseChaining.then((data) => console.log(data)); // prints 8 got from the promise object in line 41 
+
+
+//Demonstrating errors
+
+let f = new Promise((res) => res(10));
+let er = f.then((a) => a.toFixed(200)).catch((err) => err); // catch method will return a promise object with the error object
+console.log(er);
+
+// Console message 
+Promise {<pending>}
+[[Prototype]]: Promise
+[[PromiseState]]: "fulfilled"
+[[PromiseResult]]: RangeError: toFixed() digits argument must be between 0 and 100 at Number.toFixed (<anonymous>) at http://127.0.0.1:5500/node.js:3:26
+message: "toFixed() digits argument must be between 0 and 100"
+stack: "RangeError: toFixed() digits argument must be between 0 and 100\n    at Number.toFixed (<anonymous>)\n    at http://127.0.0.1:5500/node.js:3:26"
+[[Prototype]]: Error
+
+
 //The difference between the 2 forms is that if success callback returns a rejected promise only in 2. the error will be caught by catch()
 // Reference https://javascript.info/promise-basics
