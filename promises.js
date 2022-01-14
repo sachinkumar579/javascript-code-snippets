@@ -1,3 +1,4 @@
+// Promises are used to write asynchronous code 
 
  let promise = new Promise( function (resolve,reject){
     setTimeout( ()=> {resolve("done") } , 2000); 
