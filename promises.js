@@ -24,5 +24,7 @@
 2. promise.then( result => alert(result) ).catch( error => alert(error));
 //The function inside then would be called on fulfillments and the function inside catch would be called on rejections 
 
+// In practice, an executor usually does something asynchronously and calls resolve/reject after some time
+
 //The difference between the 2 forms is that if success callback returns a rejected promise only in 2. the error will be caught by catch()
 // Reference https://javascript.info/promise-basics
