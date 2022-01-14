@@ -61,4 +61,11 @@ async function fetchText() {
 }
 
 
+// A better way to write fetch code for network requests 
+
+fetch("http://localhost:8080/data")  
+  .then((response) => response.json())  // Returns a response promise object. Call then method 
+  .then((data) => console.log(data));  // Returns the parsed JSON data as Javascript Promise wrapped object . Call then method and print the JSON object 
+
+
 // Source https://www.javascripttutorial.net/javascript-fetch-api/
