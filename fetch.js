@@ -9,7 +9,7 @@
 let response = fetch("http://localhost:8080/data") // This makes an asynchronous HTTP call 
   
 let data = response.then(data=>data.json())  // The returned response is a promise object . We call then on this response object and it returns another promise object with the JSON
-
+// To read the full response, we should call the method response.json(): it returns a promise that resolves when the full JSON object is downloaded from the remote server, with that JSON data as result.
 data.then(data=> console.log(data)) // Calling then on this object will give the actual data that is coming from the HTTP call 'http://localhost:8080/data' . Here we print the JSON
 
 // Using async/await 
