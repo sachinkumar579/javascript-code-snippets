@@ -58,6 +58,21 @@ message: "toFixed() digits argument must be between 0 and 100"
 stack: "RangeError: toFixed() digits argument must be between 0 and 100\n    at Number.toFixed (<anonymous>)\n    at http://127.0.0.1:5500/node.js:3:26"
 [[Prototype]]: Error
 
+// .catch handles errors in promises of all kinds: be it a reject() call, or an error thrown in a handler.
+// In case of an error, the promise becomes rejected, and the execution should jump to the closest rejection handler.
+// What happens when a regular error occurs and is not caught by try..catch? The script dies with a message in the console. 
+// The JavaScript engine tracks such rejections and generates a global error in that case.
+// In the browser we can catch such errors using the event unhandledrejection:
 
+// Solve 
+new Promise(function(resolve, reject) {
+  setTimeout(() => {
+    throw new Error("Whoops!");
+  }, 1000);
+}).catch(alert);
+// there’s an "implicit try..catch" around the function code. So all synchronous errors are handled.
+// But here the error is generated not while the executor is running, but later. So the promise can’t handle it.
+
+         
 //The difference between the 2 forms is that if success callback returns a rejected promise only in 2. the error will be caught by catch()
 // Reference https://javascript.info/promise-basics
