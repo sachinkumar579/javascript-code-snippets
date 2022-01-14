@@ -45,4 +45,20 @@ async function fetchText() {
   }
 }
 
+// dummy URL - invalid URL 
+
+fetchText(); // Execution begins  - it calls the function
+
+async function fetchText() {
+  let response;
+  try {
+    response = await fetch("https://reqres.in/dummy"); //prints 404 error object 
+    console.log("here"); // prints here 
+  } catch (err) {       //  doesn't go into the catch block 
+    console.log(response);
+    console.log(err);
+  }
+}
+
+
 // Source https://www.javascripttutorial.net/javascript-fetch-api/
