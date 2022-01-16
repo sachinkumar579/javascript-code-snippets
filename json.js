@@ -1,12 +1,6 @@
-// JSON is a data format that has its own independent standard and libraries for most programming languages.
 // JSON supports plain objects, arrays, strings, numbers, booleans, and null.
-// JavaScript provides methods JSON.stringify to serialize into JSON and JSON.parse to read from JSON.
-// Both methods support transformer functions for smart reading/writing.
-// If an object has toJSON, then it is called by JSON.stringify.
 
-// JavaScript provides methods:
-
-// JSON.stringify to convert objects into JSON.
+// JSON.stringify to convert objects into JSON. The result is a string following JSON notation 
 // JSON.parse to convert JSON back into an object.
 
 let user =  { name : "Sachin" , age: 32}
@@ -28,5 +22,16 @@ console.log(jsonUser) // {"name":"Sachin","Age":31}
 
 console.log(JSON.parse(jsonUser)) // {name: 'Sachin', Age: 31}
 
+let s = { name: "sachin" };
+console.log(JSON.stringify(s)); // {"name":"sachin"} 
 
+let t = '{"name":"sachin"}';
+console.log(JSON.parse(t)); // object {name:'sachin'}
+
+let s = ["1", , [1, 2], 121211, { a: 1 }, true, undefined, null];
+console.log(JSON.stringify(s));  // ["1",null,[1,2],121211,{"a":1},true,null,null]   (string representation)
+
+let s = ["Sachin", "kumar"];
+console.log(JSON.stringify(s)); // ["Sachin","kumar"] (string representation)
+ 
 // Source https://javascript.info/json
