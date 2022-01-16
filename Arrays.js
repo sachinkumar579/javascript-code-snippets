@@ -62,6 +62,22 @@ for (let key in arr) {
 // Two objects are equal == only if they refer the same object.
 // If one of the arguments of == is an object, and the other one is a primitive, then the object gets converted to primitive, as explained in the chapter 
 
+let c = [1];
+let b = [1];
+
+console.log(c == b);  // false . referring different . The values are no compared here
+
+let c = [1];
+let b = c;
+
+console.log(c == b); // true . same objects 
+
+
+// Comparing elements of 2 arrays
+
+let c = [1, 1, { b: 1 }];
+let b = [1, 1, { b: 1 }];
+
+console.log(JSON.stringify(c) == JSON.stringify(b)); // true. JSON.stringify will convert JS object into a string 
+
 // Source https://javascript.info/array
-
-
