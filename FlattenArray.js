@@ -22,3 +22,30 @@ function iterate(ele) {
 iterate(numsArr);
 
 console.log(flattenedArr);
+
+// With depth 
+
+let numsArr = [[[[1, 2, 3, 9, 4, 6]]], [1]];
+const depth = 3;
+
+// Using Javascript Array flat method
+console.log(numsArr.flat(depth)); // [1, 2, 3, 9, 4, 6, 1] 
+
+let flattenedArr = [];
+let count = 0;
+
+function iterate(ele, depth = 1) {
+  ele.forEach((element) => {
+    if (count < depth && Array.isArray(element)) {  // Increment count and exit condition when it has reached the depth 
+      count++;
+      iterate(element, depth);
+    } else {
+      count = 0;
+      flattenedArr.push(element);
+    }
+  });
+}
+
+iterate(numsArr, depth);
+
+console.log(flattenedArr); // [1, 2, 3, 9, 4, 6, 1] 
