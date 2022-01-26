@@ -30,4 +30,7 @@ function sayHi() {
 
 // Variables and functions are hoisted within the scope they belong to
 
+// When variables get hoisted, var gets undefined initialized to its value by default in the process of hoisting. 
+// let and const also get hoisted, but don't get set to undefined when they get hoisted.
+
 //Source https://codeburst.io/javascript-demystified-variable-hoisting-c3c4d2e8fd40
