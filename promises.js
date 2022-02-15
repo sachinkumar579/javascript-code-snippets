@@ -74,5 +74,15 @@ new Promise(function(resolve, reject) {
 // But here the error is generated not while the executor is running, but later. So the promise can’t handle it.
 
          
-//The difference between the 2 forms is that if success callback returns a rejected promise only in 2. the error will be caught by catch()
+// The difference between the 2 forms is that if success callback returns a rejected promise only in 2. the error will be caught by catch()
 // Reference https://javascript.info/promise-basics
+         
+// Guess the output
+         
+    let promise = async () => {
+      let num = await 2;
+      console.log(num);
+      return num;
+    };
+
+    console.log(promise());
