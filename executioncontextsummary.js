@@ -15,5 +15,7 @@
 // function is alive when the original function returns a new function that uses a variable out of its scope. Then, the 
 // link to the outer function won’t be deleted until its codes are executed and completely removed from the stack.
 // This is called Closure. Closure is a function that allows you to access the parent’s function scope, even though its execution phase is finished.
+// A lexical environment is a data structure that holds identifier-variable mapping. (here identifier refers to the name of variables/functions, 
+// and the variable is the reference to actual object [including function object] or primitive value).
 
 // Source https://betterprogramming.pub/execution-context-lexical-environment-and-closures-in-javascript-b57c979341a5
