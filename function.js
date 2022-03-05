@@ -37,6 +37,10 @@ sayHi() // This is invocation
 
 // Function arguments are the real values passed to (and received by) the function.
 
+// JavaScript functions have a built-in object called the arguments object.
+
+// The argument object contains an array of the arguments used when the function was called (invoked).
+
 //Source https://codeburst.io/javascript-demystified-02-function-hoisting-b83dcaeb265
 
 
