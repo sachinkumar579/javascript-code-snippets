@@ -33,6 +33,10 @@ sayHi() // This is invocation
 
 // Function expressions are not hoisted 
 
+// Function parameters are the names listed in the function definition.
+
+// Function arguments are the real values passed to (and received by) the function.
+
 //Source https://codeburst.io/javascript-demystified-02-function-hoisting-b83dcaeb265
 
 
