@@ -33,4 +33,6 @@ function sayHi() {
 // When variables get hoisted, var gets undefined initialized to its value by default in the process of hoisting. 
 // let and const also get hoisted, but don't get set to undefined when they get hoisted.
 
+//  All declarations (function, var, let, const and class) are hoisted in JavaScript, 
+// while the var declarations are initialized with undefined, but let and const declarations remain uninitialized.
 //Source https://codeburst.io/javascript-demystified-variable-hoisting-c3c4d2e8fd40
