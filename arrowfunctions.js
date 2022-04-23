@@ -15,3 +15,19 @@ console.log(func()) // prints 1. In this case it has the returned value of the f
 let func = ()=>  {1} ; // func has the function definition 
 
 console.log(func()) // In this case it will run the function and it does not return anything . So it is undefined 
+
+// Mutliple arrow operators
+
+let sum = (a) => (b) => console.log(a + b);
+
+sum(3)(3);
+
+// is same as writing
+
+function sum(a) {
+       return function(b) {
+          console.log(a+b);
+     }
+}
+
+
